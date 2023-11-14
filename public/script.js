@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const videoElement = document.getElementById("cameraFeed");
     const toggleButton = document.getElementById("toggleRecord");
+    const textButton = document.getElementById("textButton");
     const downloadLink = document.getElementById("downloadLink");
     let mediaRecorder;
     let chunks = [];
@@ -45,12 +46,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         // Pare a gravação
                         mediaRecorder.stop();
                         isRecording = false;
-                        toggleButton.textContent = "Iniciar Gravação";
+                        textButton.textContent = "Começar";
                     } else {
                         // Inicie a gravação
                         mediaRecorder.start();
                         isRecording = true;
-                        toggleButton.textContent = "Parar Gravação";
+                        textButton.textContent = "Parar";
                     }
                 });
             })
