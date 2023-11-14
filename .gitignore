@@ -1,0 +1,19 @@
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Diretórios de dependências (node_modules)
+node_modules/
+
+# Arquivos de log
+*.log
+
+# Arquivos de configuração
+.env
+
+# Arquivos gerados pelo sistema
+npm-debug.log
+yarn-error.log
+
+# Diretório de build (opcional, se aplicável)
+/build/
